@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # Part of tt_l10n_dz_state. See LICENSE file for full copyright and licensing details.
 {
-    'name': 'Algeria - Administrative Division',
+    'name': 'Algeria - Administrative Division (69 Wilayas & 1541 Communes)',
     'version': '18.0.4.1.0',
     'category': 'Localization',
     'summary': 'Administrative Division of Algeria (2025)',
