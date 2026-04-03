@@ -1,0 +1,95 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* tt_l10n_dz_state
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-02 00:00+0000\n"
+"PO-Revision-Date: 2026-04-02 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: French <>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. module: tt_l10n_dz_state
+#: model:ir.model,name:tt_l10n_dz_state.model_res_city
+msgid "City"
+msgstr "Commune"
+
+#. module: tt_l10n_dz_state
+#: model_terms:ir.ui.view,arch_db:tt_l10n_dz_state.tt_l10n_dz_commune_view_form
+#: model_terms:ir.ui.view,arch_db:tt_l10n_dz_state.tt_view_partner_form_inherit_dz_city
+msgid "Commune"
+msgstr "Commune"
+
+#. module: tt_l10n_dz_state
+#: model:ir.actions.act_window,name:tt_l10n_dz_state.tt_action_l10n_dz_commune
+#: model:ir.model.fields,field_description:tt_l10n_dz_state.field_res_country_state__city_ids
+#: model_terms:ir.ui.view,arch_db:tt_l10n_dz_state.tt_l10n_dz_commune_view_tree
+msgid "Communes"
+msgstr "Communes"
+
+#. module: tt_l10n_dz_state
+#: model:ir.model,name:tt_l10n_dz_state.model_res_partner
+msgid "Contact"
+msgstr "Contact"
+
+#. module: tt_l10n_dz_state
+#: model:ir.model,name:tt_l10n_dz_state.model_res_country
+msgid "Country"
+msgstr "Pays"
+
+#. module: tt_l10n_dz_state
+#: model:ir.model,name:tt_l10n_dz_state.model_res_country_state
+msgid "Country state"
+msgstr "Wilaya"
+
+
+#. module: tt_l10n_dz_state
+#: model_terms:ir.ui.view,arch_db:tt_l10n_dz_state.tt_l10n_dz_commune_view_form
+msgid "Municipality Name"
+msgstr "Nom de la Commune"
+
+#. module: tt_l10n_dz_state
+#: model_terms:ir.actions.act_window,help:tt_l10n_dz_state.tt_action_l10n_dz_commune
+msgid "No municipality found."
+msgstr "Aucune commune trouvée."
+
+#. module: tt_l10n_dz_state
+#: model_terms:ir.actions.act_window,help:tt_l10n_dz_state.tt_action_l10n_dz_wilaya
+msgid "No state found."
+msgstr "Aucune wilaya trouvée."
+
+#. module: tt_l10n_dz_state
+#: model_terms:ir.ui.view,arch_db:tt_l10n_dz_state.tt_l10n_dz_commune_view_search
+msgid "Search Municipality"
+msgstr "Rechercher une Commune"
+
+#. module: tt_l10n_dz_state
+#: model_terms:ir.ui.view,arch_db:tt_l10n_dz_state.tt_l10n_dz_commune_view_search
+msgid "Wilaya"
+msgstr "Wilaya"
+
+#. module: tt_l10n_dz_state
+#: model:ir.actions.act_window,name:tt_l10n_dz_state.tt_action_l10n_dz_wilaya
+msgid "Wilayas"
+msgstr "Wilayas"
+
+#. module: tt_l10n_dz_state
+#. odoo-javascript
+#: code:addons/tt_l10n_dz_state/static/src/js/partner_address.js:0
+#, python-format
+msgid "Municipality"
+msgstr "Commune"
+
+#. module: tt_l10n_dz_state
+#. odoo-javascript
+#: code:addons/tt_l10n_dz_state/static/src/js/partner_address.js:0
+#, python-format
+msgid "Wilaya"
+msgstr "Wilaya"

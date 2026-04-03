@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- ============================================= -->
+    <!-- res.partner form: city_id customization       -->
+    <!-- ============================================= -->
+    <record id="tt_view_partner_form_inherit_dz_city" model="ir.ui.view">
+        <field name="name">res.partner.form.inherit.tt_l10n_dz.city</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base_address_extended.address_street_extended_city_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='city_id']" position="attributes">
+                <attribute name="domain">[('state_id', '=', state_id)]</attribute>
+                <attribute name="context">{'default_state_id': state_id, 'default_country_id': country_id}</attribute>
+                <attribute name="placeholder">Commune</attribute>
+            </xpath>
+            <!-- Always show the free-text city field -->
+            <xpath expr="//field[@name='city']" position="attributes">
+                <attribute name="invisible">0</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>
