@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- ============================== -->
+    <!--      COMMUNES - Views          -->
+    <!-- ============================== -->
+    <record id="tt_l10n_dz_commune_view_tree" model="ir.ui.view">
+        <field name="name">res.city.tree.tt_l10n_dz</field>
+        <field name="model">res.city</field>
+        <field name="arch" type="xml">
+            <tree string="Communes">
+                <field name="name" />
+                <field name="state_id" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="tt_l10n_dz_commune_view_form" model="ir.ui.view">
+        <field name="name">res.city.form.tt_l10n_dz</field>
+        <field name="model">res.city</field>
+        <field name="arch" type="xml">
+            <form string="Commune">
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" placeholder="Municipality Name" />
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="state_id" />
+                            <field name="country_id" />
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="tt_l10n_dz_commune_view_search" model="ir.ui.view">
+        <field name="name">res.city.search.tt_l10n_dz</field>
+        <field name="model">res.city</field>
+        <field name="arch" type="xml">
+            <search string="Search Municipality">
+                <field name="name" />
+                <field name="state_id" />
+                <group string="Group By">
+                    <filter name="group_wilaya" string="Wilaya" context="{'group_by': 'state_id'}" />
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- ============================== -->
+    <!--         ACTIONS                -->
+    <!-- ============================== -->
+    <record id="tt_action_l10n_dz_wilaya" model="ir.actions.act_window">
+        <field name="name">Wilayas</field>
+        <field name="res_model">res.country.state</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('country_id.code', '=', 'DZ')]</field>
+        <field name="context">{'default_country_id': %(base.dz)d}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">No state found.</p>
+        </field>
+    </record>
+
+    <record id="tt_action_l10n_dz_commune" model="ir.actions.act_window">
+        <field name="name">Communes</field>
+        <field name="res_model">res.city</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('country_id.code', '=', 'DZ')]</field>
+        <field name="context">{'search_default_group_wilaya': 1, 'default_country_id': %(base.dz)d}</field>
+        <field name="search_view_id" ref="tt_l10n_dz_commune_view_search" />
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">No municipality found.</p>
+        </field>
+    </record>
+
+</odoo>

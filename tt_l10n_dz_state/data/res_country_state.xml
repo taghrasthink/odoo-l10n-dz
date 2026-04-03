@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="state_dz_01" model="res.country.state">
+            <field name="name">Adrar</field>
+            <field name="code">01</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_02" model="res.country.state">
+            <field name="name">Chlef</field>
+            <field name="code">02</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_03" model="res.country.state">
+            <field name="name">Laghouat</field>
+            <field name="code">03</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_04" model="res.country.state">
+            <field name="name">Oum El Bouaghi</field>
+            <field name="code">04</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_05" model="res.country.state">
+            <field name="name">Batna</field>
+            <field name="code">05</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_06" model="res.country.state">
+            <field name="name">Bejaia</field>
+            <field name="code">06</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_07" model="res.country.state">
+            <field name="name">Biskra</field>
+            <field name="code">07</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_08" model="res.country.state">
+            <field name="name">Bechar</field>
+            <field name="code">08</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_09" model="res.country.state">
+            <field name="name">Blida</field>
+            <field name="code">09</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_10" model="res.country.state">
+            <field name="name">Bouira</field>
+            <field name="code">10</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_11" model="res.country.state">
+            <field name="name">Tamanrasset</field>
+            <field name="code">11</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_12" model="res.country.state">
+            <field name="name">Tebessa</field>
+            <field name="code">12</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_13" model="res.country.state">
+            <field name="name">Tlemcen</field>
+            <field name="code">13</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_14" model="res.country.state">
+            <field name="name">Tiaret</field>
+            <field name="code">14</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_15" model="res.country.state">
+            <field name="name">Tizi Ouzou</field>
+            <field name="code">15</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_16" model="res.country.state">
+            <field name="name">Alger</field>
+            <field name="code">16</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_17" model="res.country.state">
+            <field name="name">Djelfa</field>
+            <field name="code">17</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_18" model="res.country.state">
+            <field name="name">Jijel</field>
+            <field name="code">18</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_19" model="res.country.state">
+            <field name="name">Setif</field>
+            <field name="code">19</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_20" model="res.country.state">
+            <field name="name">Saida</field>
+            <field name="code">20</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_21" model="res.country.state">
+            <field name="name">Skikda</field>
+            <field name="code">21</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_22" model="res.country.state">
+            <field name="name">Sidi Bel Abbes</field>
+            <field name="code">22</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_23" model="res.country.state">
+            <field name="name">Annaba</field>
+            <field name="code">23</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_24" model="res.country.state">
+            <field name="name">Guelma</field>
+            <field name="code">24</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_25" model="res.country.state">
+            <field name="name">Constantine</field>
+            <field name="code">25</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_26" model="res.country.state">
+            <field name="name">Medea</field>
+            <field name="code">26</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_27" model="res.country.state">
+            <field name="name">Mostaganem</field>
+            <field name="code">27</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_28" model="res.country.state">
+            <field name="name">M&#x27;Sila</field>
+            <field name="code">28</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_29" model="res.country.state">
+            <field name="name">Mascara</field>
+            <field name="code">29</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_30" model="res.country.state">
+            <field name="name">Ouargla</field>
+            <field name="code">30</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_31" model="res.country.state">
+            <field name="name">Oran</field>
+            <field name="code">31</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_32" model="res.country.state">
+            <field name="name">El Bayadh</field>
+            <field name="code">32</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_33" model="res.country.state">
+            <field name="name">Illizi</field>
+            <field name="code">33</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_34" model="res.country.state">
+            <field name="name">Bordj Bou Arreridj</field>
+            <field name="code">34</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_35" model="res.country.state">
+            <field name="name">Boumerdes</field>
+            <field name="code">35</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_36" model="res.country.state">
+            <field name="name">El Tarf</field>
+            <field name="code">36</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_37" model="res.country.state">
+            <field name="name">Tindouf</field>
+            <field name="code">37</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_38" model="res.country.state">
+            <field name="name">Tissemsilt</field>
+            <field name="code">38</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_39" model="res.country.state">
+            <field name="name">El Oued</field>
+            <field name="code">39</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_40" model="res.country.state">
+            <field name="name">Khenchela</field>
+            <field name="code">40</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_41" model="res.country.state">
+            <field name="name">Souk Ahras</field>
+            <field name="code">41</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_42" model="res.country.state">
+            <field name="name">Tipaza</field>
+            <field name="code">42</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_43" model="res.country.state">
+            <field name="name">Mila</field>
+            <field name="code">43</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_44" model="res.country.state">
+            <field name="name">Ain Defla</field>
+            <field name="code">44</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_45" model="res.country.state">
+            <field name="name">Naama</field>
+            <field name="code">45</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_46" model="res.country.state">
+            <field name="name">Ain Temouchent</field>
+            <field name="code">46</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_47" model="res.country.state">
+            <field name="name">Ghardaia</field>
+            <field name="code">47</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_48" model="res.country.state">
+            <field name="name">Relizane</field>
+            <field name="code">48</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_49" model="res.country.state">
+            <field name="name">Timimoun</field>
+            <field name="code">49</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_50" model="res.country.state">
+            <field name="name">Bordj Badji Mokhtar</field>
+            <field name="code">50</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_51" model="res.country.state">
+            <field name="name">Ouled Djellal</field>
+            <field name="code">51</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_52" model="res.country.state">
+            <field name="name">Beni Abbes</field>
+            <field name="code">52</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_53" model="res.country.state">
+            <field name="name">In Salah</field>
+            <field name="code">53</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_54" model="res.country.state">
+            <field name="name">In Guezzam</field>
+            <field name="code">54</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_55" model="res.country.state">
+            <field name="name">Touggourt</field>
+            <field name="code">55</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_56" model="res.country.state">
+            <field name="name">Djanet</field>
+            <field name="code">56</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_57" model="res.country.state">
+            <field name="name">El M&#x27;Ghair</field>
+            <field name="code">57</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_58" model="res.country.state">
+            <field name="name">El Meniaa</field>
+            <field name="code">58</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_59" model="res.country.state">
+            <field name="name">Aflou</field>
+            <field name="code">59</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_60" model="res.country.state">
+            <field name="name">El Abiodh Sidi Cheikh</field>
+            <field name="code">60</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_61" model="res.country.state">
+            <field name="name">El Aricha</field>
+            <field name="code">61</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_62" model="res.country.state">
+            <field name="name">El Kantara</field>
+            <field name="code">62</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_63" model="res.country.state">
+            <field name="name">Barika</field>
+            <field name="code">63</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_64" model="res.country.state">
+            <field name="name">Bou Saada</field>
+            <field name="code">64</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_65" model="res.country.state">
+            <field name="name">Bir El Ater</field>
+            <field name="code">65</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_66" model="res.country.state">
+            <field name="name">Ksar El Boukhari</field>
+            <field name="code">66</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_67" model="res.country.state">
+            <field name="name">Ksar Chellala</field>
+            <field name="code">67</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_68" model="res.country.state">
+            <field name="name">Ain Oussara</field>
+            <field name="code">68</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+        <record id="state_dz_69" model="res.country.state">
+            <field name="name">Messaad</field>
+            <field name="code">69</field>
+            <field name="country_id" ref="base.dz" />
+        </record>
+    </data>
+</odoo>
