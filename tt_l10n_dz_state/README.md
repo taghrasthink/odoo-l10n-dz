@@ -3,9 +3,9 @@
 **The definitive geographic database for Odoo in Algeria, updated according to the November 2025 administrative reforms.**
 
 [![License: LGPL-3](https://img.shields.io/badge/License-LGPL--3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)
-[![Odoo 17](https://img.shields.io/badge/Odoo-17.0-blueviolet)](https://github.com/taghrasthink/tt_l10n_dz_state/tree/17.0)
-[![Odoo 18](https://img.shields.io/badge/Odoo-18.0-blueviolet)](https://github.com/taghrasthink/tt_l10n_dz_state/tree/18.0)
-[![Odoo 19](https://img.shields.io/badge/Odoo-19.0-blueviolet)](https://github.com/taghrasthink/tt_l10n_dz_state/tree/19.0)
+[![Odoo 17](https://img.shields.io/badge/Odoo-17.0-blueviolet)](https://github.com/taghrasthink/odoo/tree/17.0)
+[![Odoo 18](https://img.shields.io/badge/Odoo-18.0-blueviolet)](https://github.com/taghrasthink/odoo/tree/18.0)
+[![Odoo 19](https://img.shields.io/badge/Odoo-19.0-blueviolet)](https://github.com/taghrasthink/odoo/tree/19.0)
 
 ---
 
@@ -42,13 +42,13 @@ Native support for **Latin** (French/English) and **Arabic**. Geographic names a
 1. Clone this repository into your Odoo addons directory:
    ```bash
    # For Odoo 18
-   git clone -b 18.0 https://github.com/taghrasthink/tt_l10n_dz_state.git
+   git clone -b 18.0 https://github.com/taghrasthink/odoo.git
 
    # For Odoo 17
-   git clone -b 17.0 https://github.com/taghrasthink/tt_l10n_dz_state.git
+   git clone -b 17.0 https://github.com/taghrasthink/odoo.git
 
    # For Odoo 19
-   git clone -b 19.0 https://github.com/taghrasthink/tt_l10n_dz_state.git
+   git clone -b 19.0 https://github.com/taghrasthink/odoo.git
    ```
 
 2. Restart your Odoo server and update the apps list.
