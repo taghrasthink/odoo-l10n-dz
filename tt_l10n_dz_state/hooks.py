@@ -78,6 +78,30 @@ DZ_STATE_AR_NAMES = {
 }
 
 
+def _apply_ar_translations(env):
+    """Apply Arabic translations for all DZ wilayas.
+
+    Uses a single write() per state to avoid N+1 queries.
+    Returns the number of states updated.
+    """
+    ar_lang = env['res.lang'].search([('code', '=', 'ar_001')], limit=1)
+    if not ar_lang:
+        ar_lang = env['res.lang'].search([('code', 'like', 'ar%')], limit=1)
+    if not ar_lang:
+        _logger.info("Arabic language not installed, skipping DZ state translations.")
+        return 0
+
+    lang_code = ar_lang.code
+    states = env['res.country.state'].search([('country_id.code', '=', 'DZ')])
+    count = 0
+    for state in states:
+        ar_name = DZ_STATE_AR_NAMES.get(state.code)
+        if ar_name:
+            state.with_context(lang=lang_code).name = ar_name
+            count += 1
+    return count
+
+
 def post_init_hook(env):
     """Set Arabic translations for Algerian wilayas.
 
@@ -85,22 +109,9 @@ def post_init_hook(env):
     some DZ states with its own XML IDs, making .po translations
     (which reference our module's XML IDs) ineffective for those records.
     """
-    ar_lang = env['res.lang'].search([('code', '=', 'ar_001')], limit=1)
-    if not ar_lang:
-        ar_lang = env['res.lang'].search([('code', 'like', 'ar%')], limit=1)
-    if not ar_lang:
-        _logger.info("Arabic language not installed, skipping DZ state translations.")
-        return
-
-    states = env['res.country.state'].search([('country_id.code', '=', 'DZ')])
-    count = 0
-    for state in states:
-        ar_name = DZ_STATE_AR_NAMES.get(state.code)
-        if ar_name:
-            state.with_context(lang=ar_lang.code).name = ar_name
-            count += 1
-
-    _logger.info("Set Arabic translations for %d Algerian wilayas.", count)
+    count = _apply_ar_translations(env)
+    if count:
+        _logger.info("Set Arabic translations for %d Algerian wilayas.", count)
 
 
 def uninstall_hook(env):

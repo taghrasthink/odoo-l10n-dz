@@ -62,11 +62,14 @@ patch(FormController.prototype, {
     setup() {
         super.setup();
 
+        // Only activate on res.partner forms — skip all others immediately.
+        if (this.model?.root?.resModel !== "res.partner") return;
+
         let _tid = null;
 
         const scheduleUpdate = () => {
-            const root = this.model?.root;
-            if (!root || root.resModel !== "res.partner") return;
+            // Re-check model in case of dynamic form switching.
+            if (this.model?.root?.resModel !== "res.partner") return;
 
             // Debounce: cancel pending update so only the latest render wins.
             clearTimeout(_tid);
