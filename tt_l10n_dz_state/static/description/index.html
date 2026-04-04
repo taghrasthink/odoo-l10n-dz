@@ -1,6 +1,3 @@
-<!-- ══════════════════════════════════════════════════════════════════ -->
-<!-- ODOO METHODOLOGY DOCUMENTATION STYLE -->
-<!-- ══════════════════════════════════════════════════════════════════ -->
 <section class="oe_container"
     style="background: #ffffff; padding: 40px 15px; font-family: 'Inter', sans-serif; color: #334155;">
 
@@ -11,117 +8,76 @@
             font-style: normal;
             font-weight: 700;
             font-display: swap;
-            src: url(data:font/woff2;base64,d09GMgABAAAAAGMAABAAAAAA1YAAAGKdAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGoE4G5N8HIMuBmA/U1RBVCoAg1QRCAqC7UyChEELgx4AATYCJAOGNgQgBYNmB48YDAcbPZ4V3Bi6PQ4IcHamFLBjbridUPVYsDIqKli9wf9fkxtjwIVqfT8sbRkwRSYChUKy2XZmqMhGImxhqmXe89bkXbxH+Q71cHCVRx5+vzzV3JfPku8M/ydtacvGT/fAM7Bt5E/OSxJUa2Tv3j0wCPkBAo3gCSyDirMPLgSKhU1qhufn1vu1BraGHmPQ4opIN9gYXcKIaJVSjII2UIk0sVBBPbASrATts4uIWsXKqt7lMwohCY8DI8AYtH6dQPjvU3dT/n82s/ek43QRQXZ/CPf8iLFeWpXeB13VY30oaKnH1oLGmmUIDQPz3NJbeYMG+BQOdeZnzU/fGmTLDpAUAJiKW0gFnDv+svXXbsAYhnM0eI54mC/gkd8sKveqAPi/1FVV16o3tx9KKnd7drcUQEyIG8PhhNCE5OG9nXzawIbEdbgakJFom2iDBfIS2qRu98bsHeZ1Wv1uu9teCLELPzR9rGPT4hZaRSSQx0hIBAMeog0zzO2k+N4xZnLdEHJ6aW8c0aIjAGFsyBrHV0LXhqM1Wx7fgAiDK9VQbBKmxw/WA8NiDZfM/29pvbS12qD9zpGa2YClQKgJqbq3FOpVa1eqHu3/qtbs13TP/FDa2P1jzzjkAFikucdR4zjjmJCPkQmJhJnBj9ZG9mcmzISYmTID4v+bK+1MZnPAU+IUUO07oQvo9GZ+Dn4mcwvFJMdqc8iqxKqvqs/XAdmkAKTu3L4qVPUGhKu0leXhv/uUc/Ju9sGAhOyDxnSWrBNbunO5WKwVrKeAtU5cTr8xBn72WQ/ctkg6z6MMA8/G1ATXAIqiLrAFlEgWckpreerdU/dC6Vi6liccZ1GAQW0SxpiilBo43w9hkfOdb+W+pEz2yBR7jGqEEEIIE0zqHB9/PW2Isyc2qF6aGmR7EXuM2f9c98a+0bBLDQQUsv7/JUC95M10QRBm4SBWgQjaiNiw5zh3QDwC8Sx8+AsXKVrs4gBJBckEyQ2kvKhUtVpAGgJZXazVZL3NegwYsnXbAdkJsu8g2J8FqMUnAq9dL9uA+pmDow6gDgUYbHtOHx10AAJAPgoKnsPVb18IcGW25N9jdTXuCTZjybs3HimdOPE0g6RfTcnrrVX5p4mvwIA+brUq2+tidOmoU74+VacvrbFuH7lCxsQoFczYYgrskBj5TYNXr7+UYiZe07+ds3RYV5opfTcr6zbVipfZnUebA1x30eyXvWyFDQe5OeTa46Ovn4DvCtYjGQR65) format('woff2');
+            src: url(data:font/woff2;base64,d09GMgABAAAAAGMAABAAAAAA1YAAAGKdAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGoE4G5N8HIMuBmA/U1RBVCoAg1QRCAqC7UyChEELgx4AATYCJAOGNgQgBYNmB48YDAcbPZ4V3Bi6PQ4IcHamFLBjbridUPVYsDIqKli9wf9fkxtjwIVqfT8sbRkwRSYChUKy2XZmqMhGImxhqmXe89bkXbxH+Q71cHCVRx5+vzzV3JfPku8M/ydtacvGT/fAM7Bt5E/OSxJUa2Tv3j0wCPkBAo3gCSyDirMPLgSKhU1qhufn1vu1BraGHmPQ4opIN9gYXcKIaJVSjII2UIk0sVBBPbASrATts4uIWsXKqt7lMwohCY8DI8AYtH6dQPjvU3dT/n82s/ek43QRQXZ/CPf8iLFeWpXeB13VY30oaKnH1oLGmmUIDQPz3NJbeYMG+BQOdeZnzU/fGmTLDpAUAJiKW0gFnDv+svXXbsAYhnM0eI54mC/gkd8sKveqAPi/1FVV16o3tx9KKnd7drcUQEyIG8PhhNCE5OG9nXzawIbEdbgakJFom2iDBfIS2qRu98bsHeZ1Wv1uu9teCLELPzR9rGPT4hZaRSSQx0hIBAMeog0zzO2k+N4xZnLdEHJ6aW8c0aIjAGFsyBrHV0LXhqM1Wx7fgAiDK9VQbBKmxw/WA8NiDZfM/29pvbS12qD9zpGa2YClQKgJqbq3FOpVa1eqHu3/qtbs13TP/FDa2P1jzzjkAFikucdR4zjjmJCPkQmJhJnBj9ZG9mcmzISYmTID4v+bK+1MZnPAU+IUUO07oQvo9GZ+Dn4mcwvFJMdqc8iqxKqvqs/XAdmkAKTu3L4qVPUGhKu0leXhv/uUc/Ju9sGAhOyDxnSWrBNbunO5WKwVrKeAtU5cTr8xBn72WQ/ctkg6z6MMA8/G1ATXAIqiLrAFlEgWckpreerdU/dC6Vi6liccZ1GAQW0SxpiilBo43w9hkfOdb+W+pEz2yBR7jGqEEEIIE0zqHB9/PW2Isyc2qF6aGmR7EXuM2f9c98a+0bBLDQQUsv7/JUC95M10QRBm4SBWgQjaiNiw5zh3QDwC8Sx8+AsXKVrs4gBJBckEyQ2kvKhUtVpAGgJZXazVZL3NegwYsnXbAdkJsu8g2J8FqMUnAq9dL9uA+pmDow6gDgUYbHtOHx10AAJAPgoKnsPVb18IcGW25N9jdTXuCTZjybs3HamdOPE0g6RfTcnrrVX5p4mvwIA+brUq2+tidOmoU74+VacvrbFuH7lCxsQoFczYYgrskBj5TYNXr7+UYiZe07+ds3RYV5opfTcr6zbVipfZnUebA1x30eyXvWyFDQe5OeTa46Ovn4DvCtYjGQR65) format('woff2');
         }
     </style>
 
     <!-- ══════════════════════════════════════════════════════════════════ -->
     <!-- HERO SECTION -->
     <!-- ══════════════════════════════════════════════════════════════════ -->
-    <div style="text-align: center; padding: 60px 20px 40px 20px;">
-
-        <img src="flag_dz.svg"
-             style="height: 80px; border-radius: 8px; margin-bottom: 30px; display: inline-block;"
-             alt="Algeria" />
-
-        <h1 style="font-size: 44px; font-weight: 800; color: #111827; letter-spacing: -1.5px; margin: 0 0 10px 0;">
-            Alg&eacute;rie : D&eacute;coupage Administratif
-        </h1>
-
-        <p style="font-family: 'Caveat', cursive; font-size: 34px; color: #00A09D; margin: 0 0 20px 0;">
-            69 Wilayas &amp; 1541 Communes
-        </p>
-
-        <div style="display: inline-block; background-color: #714B67; color: white; padding: 10px 20px; border-radius: 100px; font-weight: 700; font-size: 14px;">
-            <img src="icon.png" style="width: 18px; height: 18px; border-radius: 4px; margin-right: 8px; vertical-align: middle;">
-            <span style="vertical-align: middle;">R&Eacute;FORME NOVEMBRE 2025</span>
+    <div style="text-align: center; padding: 80px 20px 60px 20px; position: relative; overflow: hidden; border-radius: 40px; background: linear-gradient(135deg, rgba(255,255,255,0.8), rgba(255,255,255,0.5)); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.3); box-shadow: 0 40px 100px rgba(0,0,0,0.08); margin-bottom: 40px;">
+        <!-- Subtle Background Decoration -->
+        <div style="position: absolute; top: -40px; right: -40px; width: 320px; opacity: 0.1; z-index: 0; pointer-events: none; transform: rotate(15deg);">
+            <img src="logo_icon_taghrasthink.png" style="width: 100%; height: auto; filter: blur(2px);">
         </div>
+
+        <img src="icon.png" style="height: 100px; border-radius: 20px; margin-bottom: 25px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); position: relative; z-index: 2;" alt="Module Icon" />
+        <br>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Flag_of_Algeria.svg" style="height: 40px; border-radius: 4px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); margin-bottom: 25px; position: relative; z-index: 2;" alt="Algeria" />
+        
+        <h1 style="font-family: 'Inter', sans-serif; font-size: 48px; font-weight: 800; color: #111827; letter-spacing: -2px; margin: 0; position: relative; z-index: 2; line-height: 1.1;">
+            Algeria: Administrative Mapping
+        </h1>
+        
+        <p style="font-family: 'Caveat', cursive; font-size: 38px; color: #00A09D; margin: 15px 0 0 0; position: relative; z-index: 2;">
+            69 Wilayas & 1541 Municipalities
+        </p>
     </div>
 
     <div style="max-width: 800px; margin: 20px auto 40px auto; text-align: center;">
         <p style="font-size: 20px; color: #4b5563; line-height: 1.6;">
-            La base de donn&eacute;es g&eacute;ographique d&eacute;finitive pour Odoo en Alg&eacute;rie, mise &agrave; jour selon les r&eacute;formes
-            administratives de <strong>novembre 2025</strong>.
+            The definitive geographical database for Odoo in Algeria, fully updated according to the <strong>November 2025</strong> administrative reforms.
         </p>
     </div>
 
     <!-- ══════════════════════════════════════════════════════════════════ -->
-    <!-- ARROW SEPARATOR -->
+    <!-- CONTENT -->
     <!-- ══════════════════════════════════════════════════════════════════ -->
-    <div style="text-align: center; margin: 40px 0;">
-        <img src="odoo_gfx/arrow_down.png" style="height: 100px; opacity: 0.9;" alt="" />
-    </div>
+    <div style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px;">
+        <div style="display: flex; align-items: flex-start; gap: 20px; background: #f8fafc; padding: 25px; border-radius: 20px; border-left: 6px solid #00A09D;">
+            <div style="font-family: 'Caveat', cursive; font-size: 40px; color: #00A09D; line-height: 1;">01</div>
+            <div>
+                <h3 style="font-size: 20px; font-weight: 700; color: #111827; margin: 0 0 10px 0;">Total Coverage</h3>
+                <p style="font-size: 16px; color: #4b5563; margin: 0;">Integrates all 69 wilayas and 1541 municipalities, including the newest administrative redistribution.</p>
+            </div>
+        </div>
 
-    <!-- ══════════════════════════════════════════════════════════════════ -->
-    <!-- FEATURE SECTION -->
-    <!-- ══════════════════════════════════════════════════════════════════ -->
-    <div style="max-width: 1000px; margin: 0 auto 60px auto; border-radius: 40px; padding: 60px 40px; background-color: #f7f9fc; border: 3px solid #e9ecef;">
+        <div style="display: flex; align-items: flex-start; gap: 20px; background: #f8fafc; padding: 25px; border-radius: 20px; border-left: 6px solid #3367d6;">
+            <div style="font-family: 'Caveat', cursive; font-size: 40px; color: #3367d6; line-height: 1;">02</div>
+            <div>
+                <h3 style="font-size: 20px; font-weight: 700; color: #111827; margin: 0 0 10px 0;">Perfect Localization</h3>
+                <p style="font-size: 16px; color: #4b5563; margin: 0;">All names are provided in English and Arabic, ensuring professional documents (Invoices, Orders) for both local and international partners.</p>
+            </div>
+        </div>
 
-        <h2 style="margin: 0 0 50px 0; text-align: center;">
-            <img src="odoo_gfx/title_couverture_img.png"
-                style="height: 40px; display: block; margin: 0 auto;"
-                alt="Couverture Administrative Compl&egrave;te" />
-            <img src="odoo_gfx/underline_teal.png"
-                style="width: 300px; height: 16px; margin: 10px auto 0 auto; display: block;" alt="" />
-        </h2>
-
-        <!-- Row 1 -->
-        <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
-            <tr>
-                <td style="width: 50%; vertical-align: top; padding: 0 10px 0 0;">
-                    <div style="background-color: #ffffff; padding: 30px; border-radius: 24px; border: 2px solid #fff9db;">
-                        <img src="odoo_gfx/doodle_wilaya.png" style="width: 60px; display: block; margin-bottom: 15px;" alt="" />
-                        <img src="odoo_gfx/h3_wilayas.png" style="height: 28px; display: block; margin-bottom: 15px;"
-                            alt="Mapping des 69 Wilayas" />
-                        <p style="color: #64748b; line-height: 1.6; margin: 0;">Inclut les 58 wilayas standards plus les 11 nouvelles
-                            wilayas d&eacute;l&eacute;gu&eacute;es.</p>
-                    </div>
-                </td>
-                <td style="width: 50%; vertical-align: top; padding: 0 0 0 10px;">
-                    <div style="background-color: #ffffff; padding: 30px; border-radius: 24px; border: 2px solid #e3fafc;">
-                        <img src="odoo_gfx/doodle_commune.png" style="width: 60px; display: block; margin-bottom: 15px;" alt="" />
-                        <img src="odoo_gfx/h3_communes.png" style="height: 28px; display: block; margin-bottom: 15px;"
-                            alt="1541 Communes D&eacute;taill&eacute;es" />
-                        <p style="color: #64748b; line-height: 1.6; margin: 0;">Une base de donn&eacute;es compl&egrave;te des communes li&eacute;es
-                            directement &agrave; leurs wilayas respectives. Filtrage dynamique pour une saisie sans erreur.</p>
-                    </div>
-                </td>
-            </tr>
-        </table>
-
-        <!-- Row 2 -->
-        <table style="width: 100%; border-collapse: collapse;">
-            <tr>
-                <td style="width: 50%; vertical-align: top; padding: 0 10px 0 0;">
-                    <div style="background-color: #ffffff; padding: 30px; border-radius: 24px; border: 2px solid #fff5f5;">
-                        <img src="odoo_gfx/doodle_reform.png" style="width: 60px; display: block; margin-bottom: 15px;" alt="" />
-                        <img src="odoo_gfx/h3_reforme.png" style="height: 28px; display: block; margin-bottom: 15px;"
-                            alt="Pr&ecirc;t pour la R&eacute;forme 2025" />
-                        <p style="color: #64748b; line-height: 1.6; margin: 0;">Enti&egrave;rement conforme aux d&eacute;crets minist&eacute;riels de
-                            <strong>novembre 2025</strong>. Donn&eacute;es officielles, codes &agrave; jour et dernier mapping postal.</p>
-                    </div>
-                </td>
-                <td style="width: 50%; vertical-align: top; padding: 0 0 0 10px;">
-                    <div style="background-color: #ffffff; padding: 30px; border-radius: 24px; border: 2px solid #e3fafc;">
-                        <img src="odoo_gfx/doodle_lang.png" style="width: 60px; display: block; margin-bottom: 15px;" alt="" />
-                        <img src="odoo_gfx/h3_bilingue.png" style="height: 28px; display: block; margin-bottom: 15px;"
-                            alt="Support Bilingue" />
-                        <p style="color: #64748b; line-height: 1.6; margin: 0;">Support natif pour le <strong>Latin</strong> et
-                            l'<strong>Arabe</strong>. Les noms g&eacute;ographiques s'adaptent automatiquement selon la langue de
-                            l'utilisateur.</p>
-                    </div>
-                </td>
-            </tr>
-        </table>
-
+        <div style="display: flex; align-items: flex-start; gap: 20px; background: #f8fafc; padding: 25px; border-radius: 20px; border-left: 6px solid #d93025;">
+            <div style="font-family: 'Caveat', cursive; font-size: 40px; color: #d93025; line-height: 1;">03</div>
+            <div>
+                <h3 style="font-size: 20px; font-weight: 700; color: #111827; margin: 0 0 10px 0;">Ready Use</h3>
+                <p style="font-size: 16px; color: #4b5563; margin: 0;">Automatically populates the State and City fields based on the chosen localization, improving user entry speed and data accuracy.</p>
+            </div>
+        </div>
     </div>
 
     <!-- ══════════════════════════════════════════════════════════════════ -->
     <!-- FOOTER -->
     <!-- ══════════════════════════════════════════════════════════════════ -->
-    <div style="max-width: 1000px; margin: 40px auto 0 auto; padding: 40px 30px; text-align: center; border-top: 1px solid #e1e4e8;">
-        <img src="logo_icon_taghras.png" style="width: 30px; height: 30px; vertical-align: middle; margin-right: 8px; display: inline-block;">
-        <span style="font-size: 16px; color: #868e96; vertical-align: middle;">D&eacute;velopp&eacute; par <strong>TaghrasThink</strong></span>
+    <div style="max-width: 800px; margin: 60px auto 0 auto; padding-top: 30px; text-align: center; border-top: 1px solid #e2e8f0;">
+        <div style="display: flex; align-items: center; justify-content: center; gap: 15px; margin-bottom: 15px;">
+            <img src="logo_icon_taghrasthink.png" style="width: 32px; height: 32px;">
+            <p style="font-size: 16px; color: #64748b; margin: 0;">Developed by <strong>TaghrasThink</strong></p>
+        </div>
+        <p style="font-size: 12px; color: #94a3b8; text-transform: uppercase; letter-spacing: 1px; font-weight: 600;">LGPL-3 License</p>
     </div>
 
 </section>
