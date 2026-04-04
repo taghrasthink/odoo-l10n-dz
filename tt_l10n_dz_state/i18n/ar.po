@@ -18,10 +18,9 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:tt_l10n_dz_state.tt_l10n_dz_commune_view_form
 #: model_terms:ir.ui.view,arch_db:tt_l10n_dz_state.tt_view_partner_form_inherit_dz_city
 msgid "Commune"
-msgstr "البلدية"
+msgstr "بلدية"
 
 #. module: tt_l10n_dz_state
-#: model:ir.actions.act_window,name:tt_l10n_dz_state.tt_action_l10n_dz_commune
 #: model:ir.model.fields,field_description:tt_l10n_dz_state.field_res_country_state__city_ids
 #: model_terms:ir.ui.view,arch_db:tt_l10n_dz_state.tt_l10n_dz_commune_view_tree
 msgid "Communes"
@@ -32,21 +31,10 @@ msgstr "البلديات"
 msgid "Group By"
 msgstr "تجميع حسب"
 
-
 #. module: tt_l10n_dz_state
 #: model_terms:ir.ui.view,arch_db:tt_l10n_dz_state.tt_l10n_dz_commune_view_form
 msgid "Municipality Name"
 msgstr "اسم البلدية"
-
-#. module: tt_l10n_dz_state
-#: model_terms:ir.actions.act_window,help:tt_l10n_dz_state.tt_action_l10n_dz_commune
-msgid "No municipality found."
-msgstr "لم يتم العثور على أي بلدية."
-
-#. module: tt_l10n_dz_state
-#: model_terms:ir.actions.act_window,help:tt_l10n_dz_state.tt_action_l10n_dz_wilaya
-msgid "No state found."
-msgstr "لم يتم العثور على أي ولاية."
 
 #. module: tt_l10n_dz_state
 #: model_terms:ir.ui.view,arch_db:tt_l10n_dz_state.tt_l10n_dz_commune_view_search
@@ -57,11 +45,6 @@ msgstr "البحث عن بلدية"
 #: model_terms:ir.ui.view,arch_db:tt_l10n_dz_state.tt_l10n_dz_commune_view_search
 msgid "Wilaya"
 msgstr "الولاية"
-
-#. module: tt_l10n_dz_state
-#: model:ir.actions.act_window,name:tt_l10n_dz_state.tt_action_l10n_dz_wilaya
-msgid "Wilayas"
-msgstr "الولايات"
 
 #. module: tt_l10n_dz_state
 #: model:res.country.state,name:tt_l10n_dz_state.state_dz_01

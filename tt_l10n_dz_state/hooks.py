@@ -101,3 +101,11 @@ def post_init_hook(env):
             count += 1
 
     _logger.info("Set Arabic translations for %d Algerian wilayas.", count)
+
+
+def uninstall_hook(env):
+    """Reset enforce_cities on Algeria to avoid broken address forms."""
+    country = env.ref('base.dz', raise_if_not_found=False)
+    if country:
+        country.enforce_cities = False
+        _logger.info("tt_l10n_dz_state: reset enforce_cities on Algeria.")
