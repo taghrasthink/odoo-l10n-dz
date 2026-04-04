@@ -34,9 +34,9 @@ Data sourced from https://github.com/S450R1/algeria-cities-2025
         ],
     },
     'post_init_hook': 'post_init_hook',
+    'uninstall_hook': 'uninstall_hook',
     'images': ['static/description/banner.jpg'],
     'installable': True,
     'auto_install': False,
     'application': False,
-    'application_type': 'anti_cache_force_base64_v130',
 }
