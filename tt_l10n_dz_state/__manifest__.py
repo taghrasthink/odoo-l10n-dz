@@ -2,7 +2,7 @@
 # Part of tt_l10n_dz_state. See LICENSE file for full copyright and licensing details.
 {
     'name': 'Algeria - Administrative Division (69 Wilayas)',
-    'version': '19.0.4.1.0',
+    'version': '20.0.4.1.1',
     'category': 'Localization',
     'summary': 'Administrative Division of Algeria (2025)',
     'description': """
