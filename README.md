@@ -1,24 +1,18 @@
-# TaghrasThink — Localization Algeria (DZ)
+# Odoo Localization — Algeria (DZ)
 
-Open-source Odoo modules developed by **[TaghrasThink](https://github.com/taghrasthink)**.
-
----
+Odoo modules for the Algerian localization.
 
 ## Modules
 
 ### 🇩🇿 [`tt_l10n_dz_state`](tt_l10n_dz_state/) — Algeria Administrative Division
 
-The definitive geographic database for Odoo in Algeria, updated according to the **November 2025** administrative reforms.
+The 69 wilayas and 1541 communes of Algeria, following the **November 2025** administrative reform.
 
-- 69 Wilayas (58 standard + 11 new delegated wilayas)
-- 1541 Communes linked to their respective wilayas
-- Bilingual support (Latin & Arabic)
-- Partner address autocomplete (Wilaya → Commune)
-- Compatible with Odoo 17, 18, 19 and 20 (CE & EE)
+- Communes linked to their wilaya, with automatic filtering on partner addresses
+- Latin and Arabic names, displayed according to the user's language
+- Community and Enterprise editions
 
-→ [View on Odoo Apps](https://apps.odoo.com/apps/modules/18.0/tt_l10n_dz_state)
-
----
+→ [Module documentation](tt_l10n_dz_state/README.md) · [View on Odoo Apps](https://apps.odoo.com/apps/modules/18.0/tt_l10n_dz_state)
 
 ## Compatibility
 
@@ -26,18 +20,22 @@ The definitive geographic database for Odoo in Algeria, updated according to the
 |--------|:-------:|:-------:|:-------:|:-------:|
 | `tt_l10n_dz_state` | ✅ | ✅ | ✅ | ✅ |
 
----
-
 ## Installation
 
-Clone the branch matching your Odoo version:
+Each Odoo version has its own branch (`17.0`, `18.0`, `19.0`, `20.0`). Clone the one that matches
+your Odoo, replacing `<version>`:
 
 ```bash
-git clone -b 18.0 https://github.com/taghrasthink/odoo-l10n-dz.git
+git clone -b <version> https://github.com/taghrasthink/odoo-l10n-dz.git
 ```
 
-Then add the cloned folder to your `addons_path` in `odoo.conf`.
+Then add the cloned folder to `addons_path` in `odoo.conf`.
+
+## Releases
+
+Release notes are on the [Releases page](https://github.com/taghrasthink/odoo-l10n-dz/releases);
+the module's [CHANGELOG](tt_l10n_dz_state/CHANGELOG.md) lists the changes for each version.
 
 ---
 
-Developed by **[TaghrasThink](https://github.com/taghrasthink)**
+Maintained by **[TaghrasThink](https://github.com/taghrasthink)**
