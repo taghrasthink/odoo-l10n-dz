@@ -63,14 +63,12 @@ patch(FormController.prototype, {
         super.setup();
 
         // Only activate on res.partner forms — skip all others immediately.
-        if (this.model?.root?.resModel !== "res.partner") return;
+        // model.root is only created by the first load, after setup().
+        if (this.props.resModel !== "res.partner") return;
 
         let _tid = null;
 
         const scheduleUpdate = () => {
-            // Re-check model in case of dynamic form switching.
-            if (this.model?.root?.resModel !== "res.partner") return;
-
             // Debounce: cancel pending update so only the latest render wins.
             clearTimeout(_tid);
             _tid = setTimeout(() => {
@@ -95,7 +93,27 @@ patch(FormController.prototype, {
             }, 250);
         };
 
+        this._ttDzScheduleUpdate = scheduleUpdate;
         onMounted(scheduleUpdate);
         onPatched(scheduleUpdate);
+    },
+
+    // Field edits re-render the fields but not the controller, so onPatched
+    // alone misses a country change. The model supports an onRecordChanged
+    // hook that the form controller leaves unset.
+    get modelParams() {
+        const params = super.modelParams;
+        if (this.props.resModel === "res.partner") {
+            const previous = params.hooks?.onRecordChanged;
+            params.hooks = {
+                ...params.hooks,
+                onRecordChanged: (...args) => {
+                    const result = previous?.(...args);
+                    this._ttDzScheduleUpdate?.();
+                    return result;
+                },
+            };
+        }
+        return params;
     },
 });
