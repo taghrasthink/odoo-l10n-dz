@@ -97,7 +97,12 @@ def _apply_ar_translations(env):
     for state in states:
         ar_name = DZ_STATE_AR_NAMES.get(state.code)
         if ar_name:
-            state.with_context(lang=lang_code).name = ar_name
+            # Pass en_US explicitly: when en_US is inactive, Odoo copies any
+            # translated write into en_US and the Latin name would be lost.
+            state.update_field_translations('name', {
+                'en_US': state.with_context(lang='en_US').name,
+                lang_code: ar_name,
+            })
             count += 1
     return count
 
