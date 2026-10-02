@@ -1,6 +1,6 @@
 # 🇩🇿 Algeria - Administrative Division
 
-**The definitive geographic database for Odoo in Algeria, updated according to the November 2025 administrative reforms.**
+**Wilayas and communes of Algeria for Odoo, following the November 2025 administrative reform.**
 
 [![License: LGPL-3](https://img.shields.io/badge/License-LGPL--3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)
 [![Odoo 17](https://img.shields.io/badge/Odoo-17.0-blueviolet)](https://github.com/taghrasthink/odoo-l10n-dz/tree/17.0)
@@ -12,65 +12,42 @@
 
 ## Features
 
-### 🏛️ 69 Wilayas
-Includes all 58 standard wilayas plus the 11 new delegated wilayas from the 2025 reform.
-
-### 🏘️ 1541 Communes
-A complete database of communes linked directly to their respective wilayas. Dynamic filtering for error-free data entry.
-
-### 📜 Ready for the 2025 Reform
-Fully compliant with the ministerial decrees of **November 2025**. Official data, updated codes, and latest postal mapping.
-
-### 🌍 Bilingual Support
-Native support for **Latin** (French/English) and **Arabic**. Geographic names automatically adapt based on the user's language.
+- **69 wilayas**: the 58 standard wilayas plus the 11 delegated wilayas created by the 2025 reform.
+- **1541 communes**, each linked to its wilaya.
+- **Bilingual names**: Latin script and Arabic, displayed according to the user's language.
+- **Address entry on contacts**: the commune list is filtered by the selected wilaya, and the
+  field placeholders read *Wilaya* / *Commune* (*الولاية* / *البلدية* in Arabic).
 
 ---
 
-## Technical Details
+## What it does
 
-| | |
-|---|---|
-| **Technical Name** | `tt_l10n_dz_state` |
-| **Category** | Localization |
-| **License** | LGPL-3 |
-| **Dependencies** | `contacts`, `base_address_extended` |
-| **Author** | TaghrasThink |
+- Creates the 69 states in `res.country.state` and the 1541 cities in `res.city`.
+- Turns on **Enforce Cities** (`enforce_cities`) for Algeria, so addresses use the commune dropdown.
+- On partner forms, filters communes by wilaya, clears the commune when the wilaya changes, and
+  keeps the free-text *City* field available next to the dropdown.
+- Applies the Arabic wilaya names at install time (`post_init_hook`); communes are translated
+  through the `.po` files.
+- Resets **Enforce Cities** on Algeria when the module is uninstalled.
 
 ---
 
 ## Installation
 
-1. Clone this repository into your Odoo addons directory:
-   ```bash
-   # For Odoo 18
-   git clone -b 18.0 https://github.com/taghrasthink/odoo-l10n-dz.git
+1. Clone the branch that matches your Odoo version into your addons directory:
 
-   # For Odoo 17
-   git clone -b 17.0 https://github.com/taghrasthink/odoo-l10n-dz.git
+   | Odoo | Command |
+   |:----:|---------|
+   | 17 | `git clone -b 17.0 https://github.com/taghrasthink/odoo-l10n-dz.git` |
+   | 18 | `git clone -b 18.0 https://github.com/taghrasthink/odoo-l10n-dz.git` |
+   | 19 | `git clone -b 19.0 https://github.com/taghrasthink/odoo-l10n-dz.git` |
+   | 20 | `git clone -b 20.0 https://github.com/taghrasthink/odoo-l10n-dz.git` |
 
-   # For Odoo 19
-   git clone -b 19.0 https://github.com/taghrasthink/odoo-l10n-dz.git
+2. Add the cloned folder to `addons_path`, restart Odoo and update the apps list.
+3. Install **Algeria - Administrative Division**.
 
-   # For Odoo 20
-   git clone -b 20.0 https://github.com/taghrasthink/odoo-l10n-dz.git
-   ```
-
-2. Restart your Odoo server and update the apps list.
-
-3. Search for **"Algeria - Administrative Division"** in Apps and install.
-
----
-
-## What It Does
-
-- Populates **69 states** (wilayas) for Algeria in `res.country.state`
-- Populates **1541 cities** (communes) in `res.city`, each linked to its wilaya
-- Enables `enforce_cities` on Algeria for structured address entry
-- On partner forms:
-  - Filters communes by selected wilaya
-  - Shows the free-text city field alongside the commune dropdown
-  - Dynamic placeholders: **Wilaya** / **البلدية** based on language and country
-- Arabic translations for all 69 wilayas (applied via `post_init_hook`)
+Enable the Arabic language **before** installing the module: the Arabic wilaya names are
+applied at install time, and skipped when Arabic is not yet active.
 
 ---
 
@@ -81,14 +58,18 @@ Native support for **Latin** (French/English) and **Arabic**. Geographic names a
 | Community (CE) | ✅ | ✅ | ✅ | ✅ |
 | Enterprise (EE) | ✅ | ✅ | ✅ | ✅ |
 
----
-
-## Data Source
-
-Geographic data sourced from [S450R1/algeria-cities-2025](https://github.com/S450R1/algeria-cities-2025).
+The module only depends on `contacts` and `base_address_extended`. Odoo 20 itself requires
+PostgreSQL 16 or later.
 
 ---
 
-## Author
+## Technical details
 
-Developed by **[TaghrasThink](https://github.com/taghrasthink)**
+| | |
+|---|---|
+| **Technical name** | `tt_l10n_dz_state` |
+| **Category** | Localization |
+| **Dependencies** | `contacts`, `base_address_extended` |
+| **License** | LGPL-3 |
+| **Author** | [TaghrasThink](https://github.com/taghrasthink) |
+| **Data source** | [S450R1/algeria-cities-2025](https://github.com/S450R1/algeria-cities-2025) |
