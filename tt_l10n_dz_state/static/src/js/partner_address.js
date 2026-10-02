@@ -1,5 +1,3 @@
-/** @odoo-module */
-
 import { FormController } from "@web/views/form/form_controller";
 import { patch } from "@web/core/utils/patch";
 import { onMounted, onPatched } from "@odoo/owl";
@@ -63,14 +61,12 @@ patch(FormController.prototype, {
         super.setup();
 
         // Only activate on res.partner forms — skip all others immediately.
-        if (this.model?.root?.resModel !== "res.partner") return;
+        // model.root is only created by the first load, after setup().
+        if (this.props.resModel !== "res.partner") return;
 
         let _tid = null;
 
         const scheduleUpdate = () => {
-            // Re-check model in case of dynamic form switching.
-            if (this.model?.root?.resModel !== "res.partner") return;
-
             // Debounce: cancel pending update so only the latest render wins.
             clearTimeout(_tid);
             _tid = setTimeout(() => {
@@ -95,7 +91,16 @@ patch(FormController.prototype, {
             }, 250);
         };
 
+        this._ttDzScheduleUpdate = scheduleUpdate;
         onMounted(scheduleUpdate);
         onPatched(scheduleUpdate);
+    },
+
+    // Field edits re-render the fields but not the controller, so onPatched
+    // alone misses a country change.
+    onRecordChanged(...args) {
+        const result = super.onRecordChanged(...args);
+        this._ttDzScheduleUpdate?.();
+        return result;
     },
 });
