@@ -14,7 +14,7 @@ The definitive geographic database for Odoo in Algeria, updated according to the
 - 1541 Communes linked to their respective wilayas
 - Bilingual support (Latin & Arabic)
 - Partner address autocomplete (Wilaya → Commune)
-- Compatible with Odoo 17, 18 and 19 (CE & EE)
+- Compatible with Odoo 17, 18, 19 and 20 (CE & EE)
 
 → [View on Odoo Apps](https://apps.odoo.com/apps/modules/18.0/tt_l10n_dz_state)
 
@@ -22,9 +22,9 @@ The definitive geographic database for Odoo in Algeria, updated according to the
 
 ## Compatibility
 
-| Module | Odoo 17 | Odoo 18 | Odoo 19 |
-|--------|:-------:|:-------:|:-------:|
-| `tt_l10n_dz_state` | ✅ | ✅ | ✅ |
+| Module | Odoo 17 | Odoo 18 | Odoo 19 | Odoo 20 |
+|--------|:-------:|:-------:|:-------:|:-------:|
+| `tt_l10n_dz_state` | ✅ | ✅ | ✅ | ✅ |
 
 ---
 
